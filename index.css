@@ -1,0 +1,256 @@
+
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+body {
+    font-family: "MatrisePro";
+    text-align: left;
+}
+
+@font-face {
+    font-family: "MatrisePro";
+    src: url('font.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: "Azeret Bold";
+    src: url('AzeretMono-SemiBold.ttf') format('woff');
+  }
+
+  @font-face {
+    font-family: "Azeret Light";
+    src: url('AzeretMono-Light.woff') format('woff');
+  }
+
+marquee {
+    font-size: 1.2rem;
+    font-family: "Azeret Bold";
+    background-color: black;
+    color:white;
+    padding: .7rem;
+    bottom: 0;
+    left:0;
+    position: absolute;
+    z-index: 1;
+}
+
+img {
+    width: 10rem;
+    height:auto;
+    top: 1rem;
+    margin: auto;
+    object-fit: cover;
+    position: absolute;
+    right: 1rem;
+}
+
+button:hover {
+  background-color: rgba(255, 0, 212, 0.679);
+  cursor: pointer;
+}
+
+button {
+  background-color: rgba(229, 255, 0, 0.519);
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: "Azeret Bold";
+  border: 0;
+  text-decoration: none;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    margin-top: -1rem;
+    z-index: 0;
+  }
+
+
+  .box1, .box2, .box3, .box42, .box5, .box6, .box7, .box8, .box92, .box10 {
+    font-size: 3vw;
+  }
+  
+  .box1 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: right;
+  }
+
+  .textbox1 {
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    font-size: 7vw;
+    margin-bottom: 1rem;
+  }
+
+  .textbox2 {
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    text-align: left;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-family: "Azeret Light";
+    font-weight: bold;
+    line-height: 1.7rem;
+  }
+
+  .textbox3 {
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    margin-top: 1rem;
+  }
+  
+  .box2 {
+    grid-column-start: 3;
+    grid-column-end: 12;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+  }
+
+  .box3 {
+    grid-column-start: 3;
+    grid-column-end: 12;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  
+  .box4 {
+    grid-column-start: 2;
+    grid-column-end: 9;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    font-family: "Azeret";
+    font-size: 1.7vw;
+    text-align: left;
+    align-content: center;
+}
+
+  .box42 {
+    grid-column-start: 4;
+    grid-column-end: 12;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: left;
+  }
+
+  .box5 {
+    grid-column-start: 3;
+    grid-column-end: 11;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+
+
+  .box6 {
+    grid-column-start: 3;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: right;
+  }
+  
+  .box7 {
+    grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+  }
+
+  .box8 {
+    grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  
+  .box9 {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    font-family: "Azeret";
+    font-size: 1.7vw;
+    text-align: left;
+    align-content: center;
+}
+
+  .box92 {
+    grid-column-start: 8;
+    grid-column-end: 12;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: left;
+  }
+
+  .box10 {
+    grid-column-start: 7;
+    grid-column-end: 11;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+
+/* turn comment on and off to view grid structure below */
+  /* .wrapper {
+    border: 2px solid #f76707;
+    border-radius: 5px;
+    background-color: #fff4e6;
+  }
+  
+  .wrapper > div {
+    border: 2px solid #ffa94d;
+    border-radius: 5px;
+    background-color: #ffd8a8;
+    color: #d9480f;
+  } */
+
+
+  /* smartphone */
+@media only screen and (max-width: 900px), (orientation: portrait) {
+
+    html {
+      margin-left: 0rem;
+      margin-right: 0rem;
+  }
+
+  .wrapper {
+    margin-top: 1rem;
+
+  }
+  .textbox1 {
+    font-size: 4rem;;
+  }
+
+  img {
+    width: 6rem;
+    height:auto;
+  }
+
+  .textbox2 {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    font-size: .7rem;
+    line-height: 1.1rem;
+  }
+
+  .textbox3 {
+    grid-column-start: 3;
+    grid-column-end: 9;
+
+  }
+}
+
