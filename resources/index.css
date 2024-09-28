@@ -16,7 +16,7 @@ body {
 
   @font-face {
     font-family: "Azeret";
-    src: url('AzeretMono-Light.woff') format('woff');
+    src: url('AzeretMono-SemiBold.ttf') format('woff');
   }
 
 marquee {
