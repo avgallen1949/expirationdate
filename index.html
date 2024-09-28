@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expiration Date | RISD GD Triennial 2024</title>
+    <link rel="stylesheet" href="./resources/index.css">
+
+</head>
+<body>
+
+    <marquee><div id="countdown"></div></marquee>
+<!-- <div class="textbody">
+    <div class="wrapper1">
+        <div class="box box2">
+            <div>GD TRIENNIAL 24</div>
+            <div>EXPIRATION DATE</div>
+            <div>GD TRIENNIAL 24</div>
+        </div>
+
+    <div class="wrapper2">
+        <div class="box box1" id="smaller">
+        <div></div>
+          <div>10.10.24<br>Graphic Design</div>
+        </div>
+        <div class="box box3">
+            <div>EXPIRATION</div>
+          </div>
+    </div>
+
+    <div class="wrapper1">
+        <div class="box box4">
+            <div>DATE</div>
+        </div>
+</div> -->
+
+<img src="./resources/RISD_Seal-700px-BLUE_2x2-3028218402.png">
+
+<!-- <div class="text-wrapper">
+    <div class="textbox1">OPEN CALL</div>
+    <div class="textbox2">This year's GD Triennial theme is Expiration Date. Together we’ll be examining the intersection between graphic design and temporality, and exploring visual communication in a world of constant reproduction and redistribution. A poster for a concert… a flier for an event… The ephemeral nature of graphic design means there is an inevitable shelf life, and this exhibit is an opportunity to resurrect our formally “expired” projects. All work (class / personal / professional) from the last 3 years is welcome!</div>
+    <div class="textbox3"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdShUl-kp2h2JwDVrugea9DyJb279Jgfg32U0izZx9CwRxpcA/viewform" target="_blank"><button>SUBMIT BY OCTOBER 1</button></a></div>
+</div> -->
+
+<div class="wrapper" id="mobile-hide">
+    <div class="box1">GD TRIENNIAL 24</div>
+    <div class="box2">EXPIRATION DATE</div>
+    <div class="box3">GD TRIENNIAL 24</div>
+    <div class="box4">10.10.24<br>GRAPHIC DESIGN</div>
+    <div class="box42">EXPIRATION</div>
+    <div class="box5">DATE</div>
+  </div> 
+
+  <div class="wrapper">
+    <div class="textbox1">OPEN CALL</div>
+    <div class="textbox2">The 2024 Graphic Design Triennial theme is Expiration Date. Together we’ll be examining the intersection between graphic design and temporality, and exploring visual communication in a world of constant reproduction and redistribution. A poster for a concert… A flier for an event… The ephemeral nature of graphic design means there is an inevitable shelf life, and this exhibit is an opportunity to resurrect our formally “expired” projects. All work (class / personal / professional) from the last 3 years is welcome!</div>
+    <div class="textbox3"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdShUl-kp2h2JwDVrugea9DyJb279Jgfg32U0izZx9CwRxpcA/viewform" target="_blank"><button>SUBMIT BY OCTOBER 1</button></a></div>
+</div> 
+
+  <div class="wrapper">
+    <div class="box6">GD TRIENNIAL 24</div>
+    <div class="box7">EXPIRATION DATE</div>
+    <div class="box8">GD TRIENNIAL 24</div>
+    <div class="box9">10.10.24<br>GRAPHIC DESIGN</div>
+    <div class="box92">EXPIRATION</div>
+    <div class="box10">DATE</div>
+  </div> 
+  <div class="wrapper">
+    <div class="box1">GD TRIENNIAL 24</div>
+    <div class="box2">EXPIRATION DATE</div>
+    <div class="box3">GD TRIENNIAL 24</div>
+    <div class="box4">10.10.24<br>GRAPHIC DESIGN</div>
+    <div class="box42">EXPIRATION</div>
+    <div class="box5">DATE</div>
+  </div> 
+  <div class="wrapper">
+    <div class="box6">GD TRIENNIAL 24</div>
+    <div class="box7">EXPIRATION DATE</div>
+    <div class="box8">GD TRIENNIAL 24</div>
+    <div class="box9">10.10.24<br>GRAPHIC DESIGN</div>
+    <div class="box92">EXPIRATION</div>
+    <div class="box10">DATE</div>
+  </div> 
+  <div class="wrapper">
+    <div class="box1">GD TRIENNIAL 24</div>
+    <div class="box2">EXPIRATION DATE</div>
+    <div class="box3">GD TRIENNIAL 24</div>
+    <div class="box4">10.10.24<br>GRAPHIC DESIGN</div>
+    <div class="box42">EXPIRATION</div>
+    <div class="box5">DATE</div>
+  </div> 
+
+
+
+   <script>
+        function updateCountdown() {
+            const targetDate = new Date('2024-10-01T23:59:59');
+            const now = new Date();
+            const difference = targetDate - now;
+
+            if (difference <= 0) {
+                document.getElementById('countdown').innerHTML = "Countdown has ended!";
+                clearInterval(interval);
+                return;
+            }
+
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            document.getElementById('countdown').innerHTML = `
+                this site expires in ${days}days ${hours}hrs ${minutes}mins ${seconds}secs
+            `;
+        }
+
+        const interval = setInterval(updateCountdown, 1000);
+        updateCountdown(); 
+    </script>
+
+</body>
+</html>
