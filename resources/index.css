@@ -90,18 +90,19 @@ button {
     grid-row-start: 2;
     grid-row-end: 5;
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
     font-family: "Azeret";
     font-weight: bold;
+    line-height: 1.7rem;
   }
 
   .textbox3 {
     grid-column-start: 5;
     grid-column-end: 8;
-    grid-row-start: 10;
-    grid-row-end: 11;
-    margin-top: 2rem;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    margin-top: 1rem;
   }
   
   .box2 {
@@ -236,11 +237,12 @@ button {
   .textbox2 {
     grid-column-start: 2;
     grid-column-end: 9;
-    font-size: 1rem;
+    font-size: .8rem;
+    line-height: 1.3rem;
   }
 
   .textbox3 {
-    grid-column-start: 2;
+    grid-column-start: 3;
     grid-column-end: 9;
 
   }
