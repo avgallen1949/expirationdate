@@ -236,9 +236,9 @@ button {
 
   .textbox2 {
     grid-column-start: 2;
-    grid-column-end: 9;
-    font-size: .8rem;
-    line-height: 1.3rem;
+    grid-column-end: 10;
+    font-size: .7rem;
+    line-height: 1.1rem;
   }
 
   .textbox3 {
@@ -246,6 +246,5 @@ button {
     grid-column-end: 9;
 
   }
-
 }
 
