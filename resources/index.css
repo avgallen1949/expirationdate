@@ -28,7 +28,7 @@ body {
 marquee {
     font-size: 1.2rem;
     font-family: "Azeret Bold";
-    background-color: black;
+    background-color: rgb(255, 8, 24);
     color:white;
     padding: .7rem;
     bottom: 0;
