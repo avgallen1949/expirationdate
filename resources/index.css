@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
     overflow: hidden;
+    background-color: ;
   }
 
 body {
@@ -46,29 +47,21 @@ img {
     right: 1rem;
 }
 
-button:hover {
-  background-color: rgba(255, 0, 212, 0.679);
-  cursor: pointer;
-}
-
-button {
-  background-color: rgba(229, 255, 0, 0.519);
-  padding: 1rem;
-  font-size: .9rem;
-  font-family: "Azeret Bold";
-  border: 0;
-  text-decoration: none;
-}
 
 a {
+  color: black;
+  background-color: rgba(229, 255, 0, 0.519);
+}
+
+a:hover {
+  background-color: rgba(255, 192, 203, 0.538);
+}
+
+a:active {
   color: black;
 }
 
 a:visited {
-  color: black;
-}
-
-a:active {
   color: black;
 }
 
@@ -260,6 +253,7 @@ a:active {
     grid-column-end: 10;
     font-size: .7rem;
     line-height: 1.1rem;
+    font-family: "Azeret Light";
   }
 
   .textbox3 {
