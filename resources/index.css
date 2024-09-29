@@ -2,12 +2,12 @@
 * {
     box-sizing: border-box;
     overflow: hidden;
-    background-color: ;
   }
 
 body {
     font-family: "MatrisePro";
     text-align: left;
+
 }
 
 @font-face {
@@ -27,30 +27,21 @@ body {
 
 marquee {
     font-size: 1.2rem;
-    font-family: "Azeret Bold";
-    background-color: rgb(255, 8, 24);
-    color:white;
+    font-family: "MatrisePro";
+    background-color: rgb(88, 249, 255);
+    color:black;
     padding: .7rem;
     bottom: 0;
     left:0;
     position: absolute;
     z-index: 1;
-}
-
-img {
-    width: 10rem;
-    height:auto;
-    top: 1rem;
-    margin: auto;
-    object-fit: cover;
-    position: absolute;
-    right: 1rem;
+    text-transform: uppercase;
 }
 
 
 a {
   color: black;
-  background-color: rgba(229, 255, 0, 0.519);
+  background-color: rgb(233, 253, 114);
 }
 
 a:hover {
@@ -68,7 +59,6 @@ a:visited {
 .wrapper {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    margin-top: -1rem;
     z-index: 0;
   }
 
@@ -77,21 +67,22 @@ a:visited {
   }
   
   .box1 {
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 2;
-    text-align: right;
+    text-align: left;
   }
 
   .textbox1 {
-    grid-column-start: 1;
+    grid-column-start: 3;
     grid-column-end: 11;
     grid-row-start: 1;
     grid-row-end: 2;
-    text-align: center;
-    font-size: 7vw;
+    text-align: left;
+    font-size: 8vw;
     margin-bottom: 1rem;
+    color: rgb(255, 105, 71);
   }
 
   .textbox2 {
@@ -105,6 +96,7 @@ a:visited {
     font-family: "Azeret Light";
     font-weight: bold;
     line-height: 1.7rem;
+    z-index: 1;
   }
 
   .textbox3 {
@@ -116,7 +108,7 @@ a:visited {
   }
   
   .box2 {
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-column-end: 12;
     grid-row-start: 2;
     grid-row-end: 3;
@@ -124,7 +116,7 @@ a:visited {
   }
 
   .box3 {
-    grid-column-start: 3;
+    grid-column-start: 4;
     grid-column-end: 12;
     grid-row-start: 3;
     grid-row-end: 4;
@@ -133,7 +125,7 @@ a:visited {
   .box4 {
     grid-column-start: 2;
     grid-column-end: 9;
-    grid-row-start: 4;
+    grid-row-start: 3;
     grid-row-end: 5;
     font-family: "Azeret Bold";
     font-size: 1.7vw;
@@ -152,22 +144,19 @@ a:visited {
   .box5 {
     grid-column-start: 3;
     grid-column-end: 11;
-    grid-row-start: 5;
+    grid-row-start: 4;
     grid-row-end: 6;
   }
 
-
-
   .box6 {
-    grid-column-start: 3;
+    grid-column-start: 6;
     grid-column-end: 10;
     grid-row-start: 1;
     grid-row-end: 2;
-    text-align: right;
   }
   
   .box7 {
-    grid-column-start: 7;
+    grid-column-start: 6;
     grid-column-end: 12;
     grid-row-start: 2;
     grid-row-end: 3;
@@ -175,7 +164,7 @@ a:visited {
   }
 
   .box8 {
-    grid-column-start: 7;
+    grid-column-start: 8;
     grid-column-end: 12;
     grid-row-start: 3;
     grid-row-end: 4;
@@ -184,7 +173,7 @@ a:visited {
   .box9 {
     grid-column-start: 6;
     grid-column-end: 9;
-    grid-row-start: 4;
+    grid-row-start: 3;
     grid-row-end: 5;
     font-family: "Azeret Bold";
     font-size: 1.7vw;
@@ -207,6 +196,75 @@ a:visited {
     grid-row-end: 6;
   }
 
+  .dot1 {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50vh;
+    left: 5vw;
+    background-color: rgb(233, 253, 114);
+    z-index: 0;
+  }
+
+  .dot2 {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 70vh;
+    left: 40vw;
+    background-color: rgb(233, 253, 114);
+    z-index: 0;
+
+  }
+
+  .dot3 {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 10vh;
+    right: 10vw;
+    background-color: rgb(233, 253, 114);
+    z-index: 0;
+  }
+
+  .dot4 {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 5vh;
+    right: 30vw;
+    background-color: rgb(233, 253, 114);
+    z-index: 0;
+  }
+
+  .dot5 {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 20vh;
+    right: 10vw;
+    background-color: rgb(233, 253, 114);
+    z-index: 0;
+  }
+
+  .cursor {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(255, 105, 71);
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 3;
+  }
+
 
 /* turn comment on and off to view grid structure below */
   /* .wrapper {
@@ -227,20 +285,19 @@ a:visited {
 @media only screen and (max-width: 900px), (orientation: portrait) {
 
     html {
-      margin-left: 0rem;
-      margin-right: 0rem;
+      margin-left: .5rem;
+      margin-right: .5rem;
   }
-
-  
 
   .wrapper {
     margin-top: 1rem;
 
   }
   .textbox1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     text-align: left;
-    margin-left: 2rem;
+    grid-column-start: 1;
+    grid-column-end: 11;
   }
 
   img {
@@ -249,10 +306,10 @@ a:visited {
   }
 
   .textbox2 {
-    grid-column-start: 2;
-    grid-column-end: 10;
+    grid-column-start: 1;
+    grid-column-end: 11;
     font-size: .7rem;
-    line-height: 1.1rem;
+    line-height: 1.2rem;
     font-family: "Azeret Light";
   }
 
@@ -260,9 +317,9 @@ a:visited {
     grid-column-start: 3;
     grid-column-end: 9;
   }
-
+/* 
   #mobile-hide {
     display: none;
-  }
+  } */
 }
 
